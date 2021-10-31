@@ -8,9 +8,9 @@ import java.util.List;
 @Service
 public class BookService {
     @Autowired
-    private BookRepository reposi;
+    private BookRepository repository;
 
     public List<Book> findAll() {
-        return reposi.findAll();
+        return repository.findAll();
     }
 }
